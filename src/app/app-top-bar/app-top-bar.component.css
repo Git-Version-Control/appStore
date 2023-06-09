@@ -1,0 +1,14 @@
+nav{
+    background-color: darkblue;
+    display: flex;
+    justify-content: space-around;
+}
+h1{
+    color:white;
+    align-items: flex-end;
+}
+button{
+    height: 60%;
+    margin-top: 25px;
+    flex-direction: column-reverse;
+}

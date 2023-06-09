@@ -1,0 +1,4 @@
+<!-- <p>insert alert</p> -->
+<p *ngIf="product && product.price>700">
+    <button type="button" (click)="notify.emit()">NOTIFY ME</button>
+</p>
