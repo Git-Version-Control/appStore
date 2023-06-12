@@ -1,12 +1,16 @@
 <h1>Products</h1>
-<div *ngFor="let product of products">
+<div *ngFor="let product of products" >
     <h2>
         <a 
         [title]="product.name + ' details'"
-        [routerLink]="['/products',product.id]">
+        [routerLink]="['/products', product.id]"
+        (click)="show = !show">
+        >
             {{product.name}}
         </a>
     </h2>
+    <!-- [routerLink]="['/products', product.id]"> -->
+    <!-- (click)="redirectTo(product.id)" -->
     <p *ngIf="product.description">
         Description:{{product.description}}
     </p>
@@ -14,3 +18,5 @@
     <app-product-alerts   [product]="product" (notify)="onNotify()">    
     </app-product-alerts>
 </div>
+
+<!-- <router-outlet></router-outlet> -->
